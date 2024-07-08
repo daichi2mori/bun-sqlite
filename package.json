@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "bun run --hot src/server.ts",
-    "build:compile": "bun build --compile --minify --sourcemap src/server.ts --outfile box-app"
+    "build:compile": "bun build --compile --minify --sourcemap src/server.ts --outfile todo-app"
   },
   "dependencies": {
     "sqlite3": "^5.1.7",
