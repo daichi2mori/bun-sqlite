@@ -7,9 +7,7 @@ const tableName = "todos";
 const db = new Database(dbFileName, { create: true });
 
 const query = db.query(
-  "CREATE TABLE IF NOT EXISTS " +
-    tableName +
-    " (id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT NOT NULL, completed BOOLEAN NOT NULL DEFAULT false"
+  `CREATE TABLE IF NOT EXISTS ${tableName} (id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT NOT NULL, completed BOOLEAN NOT NULL DEFAULT false`
 );
 
 query.run();
