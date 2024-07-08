@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "bun run --hot src/server.ts",
+    "build:compile": "bun build --compile --minify --sourcemap src/server.ts --outfile box-app"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.7",
+    "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.6"
+  }
+}
